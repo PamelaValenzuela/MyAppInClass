@@ -1,5 +1,6 @@
 package com.desafiolatam.myappclass;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -25,7 +26,15 @@ protected void onCreate(Bundle savedInstanceState) {
     fab.setOnClickListener(new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Toast.makeText(Main2Activity.this, "Presiona el boton", Toast.LENGTH_SHORT).show();
+            Toast.makeText(Main2Activity.this, "Next Step", Toast.LENGTH_SHORT).show();
+            intentExample();
         }
     });
-}}
+}
+
+    private void intentExample() {
+        Intent intent = new Intent(this, Main3Activity.class);
+        startActivity(intent);
+
+    }
+}

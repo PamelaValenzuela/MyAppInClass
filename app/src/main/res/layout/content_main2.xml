@@ -13,8 +13,8 @@
         android:id="@+id/textView2"
         android:layout_width="348dp"
         android:layout_height="70dp"
-        android:hint="USER"
-        android:text="LOG IN"
+        android:hint="@string/user"
+        android:text="@string/log_in"
         app:layout_constraintBottom_toTopOf="@+id/editText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.015"
@@ -28,12 +28,13 @@
     android:layout_marginTop="12dp"
     android:layout_marginEnd="35dp"
     android:layout_marginBottom="18dp"
-    android:hint="example@example.com"
+    android:hint="@string/example_example_com"
     android:inputType="text"
     app:layout_constraintBottom_toTopOf="@+id/editText"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/textView2" />
+    app:layout_constraintTop_toBottomOf="@+id/textView2"
+    android:autofillHints="" />
     <EditText
     android:id="@+id/editText"
     android:layout_width="376dp"
@@ -49,6 +50,7 @@
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintHorizontal_bias="1.0"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/editTextUser" />
+    app:layout_constraintTop_toBottomOf="@+id/editTextUser"
+        android:autofillHints="" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
